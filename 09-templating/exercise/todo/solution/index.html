@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Intro to the DOM</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1>To Do</h1>
+            <form id="form">
+                <input type="text" name="newToDo" value="">
+                <button type="button" name="button">Submit</button>
+            </form>
+            <div id="app"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+        <script id="to-do-template" type="text/x-handlebars-template">
+            <ul id="todo-list">
+                {{#each todos}}
+                  <li class="todo-list-item">{{this}}</li>
+                {{/each}}
+            </ul>
+        </script>
+
+        <script src="app.js"> </script>
+    </body>
+</html>

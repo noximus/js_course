@@ -1,0 +1,28 @@
+.c-title {
+  width: 100%;
+  text-align: center;
+}
+
+.c-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0;
+  transition: all 250ms ease;
+}
+
+
+.c-gallery-container {
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.c-gallery__item {
+  list-style: none;
+  height: 500px;
+  min-width: 1000px;
+  background-position: center center;
+  background-size: cover;
+}

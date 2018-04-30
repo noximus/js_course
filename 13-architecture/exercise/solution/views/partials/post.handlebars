@@ -1,0 +1,15 @@
+<a class="c-wall-row" href="/posts/{{id}}">
+  <div class="c-wall-header">
+    {{ @index }}.
+  </div>
+  <div class="c-wall-item">
+    <h3>{{title}}</h3>
+    <span>( {{author}} )</span>
+    {{#if comments.length}}
+    <span> {{comments.length}} comments</span> <br>
+    {{/if}}
+    <p>
+      {{description}}
+    </p>
+  </div>
+</a>

@@ -1,0 +1,18 @@
+<div>
+
+  <form action="/pokemon" method="post">
+    <input type="text">
+    <input type="submit">
+  </form>
+
+  {{#if pokemon }}
+    {{#each pokemon}}
+      <li>
+        <a href="/pokemon/{{ pokemon.id }}">{{ pokemon.name }}</a>
+      <li>
+    {{/each }}
+  {{ else }}
+    <p>No pokemon</p>
+  {{/if }}
+
+</div>

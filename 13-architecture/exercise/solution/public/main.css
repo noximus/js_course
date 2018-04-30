@@ -1,0 +1,172 @@
+body {
+  color: darkblue;
+}
+
+a {
+  color: darkblue;
+}
+
+footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.c-header {
+  text-align: center;
+  max-width: 800px;
+  width: 80%;
+  margin: 1rem auto;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.c-header h1 {
+  letter-spacing: 2px;
+  padding-bottom: 0.5rem;
+  color: darkblue;
+  border-bottom: 1px solid currentColor;
+}
+
+.c-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.c-content {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.c-content.__centered {
+  text-align: center;
+}
+
+.c-link {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  display: block;
+  color: darkblue;
+  text-decoration: none;
+  text-align: center;
+}
+
+.c-form {
+
+}
+
+.c-form__item {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.c-form__title {
+  margin: 0.5rem 0;
+}
+
+input, textarea {
+  width: 100%;
+  display: block;
+  color: darkblue;
+  letter-spacing: 2px;
+}
+
+input[type=text],
+input[type=url] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid darkblue;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+textarea {
+  border: 1px solid darkblue;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: darkblue;
+  color: white;
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+
+.c-wall {
+  width: 100%;
+}
+
+.c-wall-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkblue;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.c-wall-header {
+  flex: 1;
+  text-align: center;
+  color: #999;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-wall-item {
+  flex: 5;
+  padding: 1rem;
+}
+
+.c-wall-footer {
+  flex: 0.5;
+  text-align: center;
+}
+
+.c-wall-item h3 {
+  font-size: 2rem;
+  margin: 0;
+  display: inline;
+}
+
+.c-wall-item a {
+  display: inline;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: darkblue;
+}
+
+.c-wall-item span {
+  color: #999;
+}
+
+
+.c-arrow {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: darkblue;
+  font-size: 2rem;
+}
+
+.c-comment {
+  padding: 1rem 0;
+  border-bottom: 1px solid darkblue;
+}
+
+.c-comment span {
+  float: right;
+}

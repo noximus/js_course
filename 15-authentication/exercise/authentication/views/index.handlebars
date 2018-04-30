@@ -1,0 +1,16 @@
+<h1>Welcome to PeopleBook!</h1>
+
+{{#each users}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <a href="/users/{{username}}">
+        {{username}}
+      </a>
+    </div>
+    {{#if bio}}
+      <div class="panel-body">
+        {{bio}}
+      </div>
+    {{/if}}
+  </div>
+{{/each}}

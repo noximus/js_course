@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+* {
+  box-sizing: border-box;
+}
+
+.brush {
+  width: 100px;
+  height: 100px;
+  background: green;
+  margin: 15px auto;
+}
+
+#canvas {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.square {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: #E7E5DB;
+  border: 1px solid grey;
+  margin: 0;
+}
+
+h1 {
+  font-family: Monoton;
+  font-size: 48px;
+  text-align: center;
+}
+
+.controls {
+  text-align: center;
+}

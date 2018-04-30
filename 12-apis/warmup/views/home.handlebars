@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Quote Book</h1>
+  {{#if quotes}}
+    <div class="quotes">
+      {{#each quotes}}
+        <a class="quote" href="/{{ this.id }}">
+          <blockquote>
+            {{ this.text }}
+          </blockquote>
+          <cite>
+            {{ this.author }}
+          </cite>
+        </a>
+      {{/each}}
+    </div>
+  {{/if}}
+  <a href="/new">Add quote</a>
+</div>

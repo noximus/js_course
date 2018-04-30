@@ -1,0 +1,17 @@
+<form class="c-form" action="/artists/edit" method="post">
+  <input type="hidden" name="id" value="{{id}}">
+
+  <div class="c-form__field">
+    <label for="name">Name: </label>
+    <input type="text" name="name" value="{{name}}" class="c-form__input">
+  </div>
+
+  <div class="c-form__field">
+    <label for="description">Description:</label>
+    <textarea name="description" rows="8" cols="40" class="c-form__input">{{description}}</textarea>
+  </div>
+  <div class="c-form__field">
+    <button type="submit" class="c-form__button">Submit</button>
+  </div>
+
+</form>

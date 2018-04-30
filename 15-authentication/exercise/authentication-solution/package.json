@@ -1,0 +1,23 @@
+{
+  "name": "peoplebook",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.6.5",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.2",
+    "ejs": "^1.0.0",
+    "express": "5.0.0-alpha.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.7.6",
+    "handlebars-helper-equal": "^1.0.0",
+    "mongoose": "^4.0.0",
+    "passport": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0"
+  }
+}

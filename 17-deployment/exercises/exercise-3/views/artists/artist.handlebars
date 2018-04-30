@@ -1,0 +1,19 @@
+<div class="c-artist">
+  <div class="c-artist__thumbnail" style="background-image: url('{{ imageUrls.[2].url }}')">
+
+  </div>
+  <div class="c-artist__bio">
+    <h1>{{ name }}</h1>
+    <p>
+      Genres: {{#each genres}}
+        <span>{{ this }}</span>
+      {{/each}}
+    </p>
+    <p>
+      {{ description }}
+    </p>
+    <p>
+      <a href="/artists/edit/{{id}}" class="c-artist__edit-link">Edit</a>
+    </p>
+  </div>
+</div>

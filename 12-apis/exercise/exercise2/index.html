@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weatherify</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weatherify</h1>
+      <form id="searchForm">
+        <input type="text" name="city" placeholder="City" value="london"/>
+        <input type="text" name="country" placeholder="Country (i.e. US)"/ value="uk">
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div id="weather">
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+    <script id="weather-template" type="text/x-handlebars-template">
+      {{#if city}}
+        <h2>{{city}}, {{country}}</h2>
+        <div class="temperature">Temperature: {{temperature}} °F</div>
+        <div class="description">{{description}}</div>
+        <div class="humidity">{{humidity}}% Humidity</div>
+        <div class="clouds">{{clouds}}% Cloud Coverage</div>
+      {{/if}}
+    </script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 1</title>
+    <style media="screen">
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      button {
+        display: block;
+        outline: none;
+        border: none;
+        background-color: red;
+        font-size: 3em;
+        padding: 2em 2.5em;
+        color: white;
+        letter-spacing: 1px;
+      }
+      #result {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        margin: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Big Red Button</button>
+    <div id="result"></div>
+    <script type="text/javascript">
+      var button = document.querySelector('button')
+      var resultContainer = document.querySelector('#result')
+
+      button.addEventListener('click', function( ) {
+        // first AJAX call here:
+
+      })
+    </script>
+  </body>
+</html>

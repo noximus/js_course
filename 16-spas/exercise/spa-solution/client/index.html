@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To do List</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>To Do List</h1>
+        <p><em>The world's greatest to do list app</em></p>
+      </div>
+    </header>
+    <main id="app">
+    </main>
+    <footer>
+      <div class="wrapper">
+        <p>Created by <em>Supercoolifragilisticexpialidocious</em> Inc</p>
+        <p>Copyright 2017</p>
+      </div>
+    </footer>
+
+    <script id="template-toDoList" type="text/x-handlebars-template">
+      <div class="todo-list">
+        <h2>Today's to dos:</h2>
+        <a href="#" class="new js-new">New</a>
+        <ul class="js-list">
+            {{#each todos}}
+              <li class="todo-list-item" data-id="{{this._id}}">
+                <a href="#">{{this.title}}</a>
+              </li>
+            {{/each}}
+        </ul>
+      </div>
+    </script>
+
+    <script id="template-newTodo" type="text/x-handlebars-template">
+      <div class="new-todo">
+        <h2>New To do:</h2>
+        <form class="js-new-todo">
+          <p>
+            <label for="title">Title</label>
+            <input type="text" name="title">
+          </p>
+          <p>
+            <label for="description">Description</label>
+            <textarea name="description" cols="30" rows="3"></textarea>
+          </p>
+          <button class="js-submit" type="submit">Add</button>
+        </form>
+      </div>
+    </script>
+
+    <script id="template-singleTodo" type="text/x-handlebars-template">
+      <div class="single-todo">
+        <a href="#" class="back js-back">Back</a>
+        <div class="todo">
+          <h2>{{ title }}</h2>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="app/index.js"></script>
+  </body>
+</html>

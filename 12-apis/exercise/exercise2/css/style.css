@@ -1,0 +1,22 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+input[type="text"] {
+    display: block;
+    padding: 20px;
+    width: 500px;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+  padding: 20px;
+  border: 1px solid green;
+  background-color: lightgreen;
+  display: block;
+  margin: auto;
+}
+h1, #weather {
+  text-align: center;
+}

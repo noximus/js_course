@@ -1,0 +1,37 @@
+<div class="c-content">
+  <h2>
+    <a href="{{post.url}}">{{post.title}}</a>
+  </h2>
+  <p>
+    {{post.description}}
+  </p>
+  <div class="c-comments">
+    <div class="c-comment-form">
+      <h3>New Comment:</h3>
+      <form class="c-form" action="/posts/{{post.id}}" method="post">
+        <div class="c-form__item">
+          <h4 class="c-form__title">Author: </h4>
+          <input type="text" name="author" value="">
+        </div>
+        <div class="c-form__item">
+          <h4 class="c-form__title">Comment: </h4>
+          <textarea name="comment" rows="8" cols="40"></textarea>
+        </div>
+        <div class="c-form__item">
+          <button type="submit" name="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <h3>Comments:</h3>
+    {{#each post.comments}}
+      <div class="c-comment">
+        <p>
+          {{comment}}
+        </p>
+        <span>
+          by {{author}}
+        </span>
+      </div>
+    {{/each}}
+  </div>
+</div>

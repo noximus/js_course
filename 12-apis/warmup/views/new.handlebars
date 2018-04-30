@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Create a new quote</h1>
+  {{#if text }}
+  <form class="form" action="/edit/{{id}}" method="post">
+  {{ else }}
+  <form class="form" action="/new" method="post">
+  {{/if }}
+    <p>
+      <label for="text">Quote:</label>
+      <textarea name="text" rows="8" cols="80">
+        {{ text }}
+      </textarea>
+    </p>
+    <p>
+      <label for="author">Author:</label>
+      <input type="text" name="author" value="{{ author }}">
+    </p>
+    <input type="submit">
+  </form>
+</div>

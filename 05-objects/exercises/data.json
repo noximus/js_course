@@ -1,0 +1,8 @@
+{
+  "Store Name": "Quick E Mart",
+  "Foods": [
+    {"name":"aubergine", "color":"purple", "price": 1.59},
+    {"name":"apple", "color":"red", "price": 0.78},
+    {"name":"nuts", "color":"brown", "price": 2.23}
+  ]
+}

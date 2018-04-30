@@ -1,0 +1,299 @@
+/*
+
+BASE
+TYPOGRAPHY
+FORM
+HEADER
+BODY
+ARTIST
+FOOTER
+
+$color1: rgba(31, 54, 61, 1);
+$color2: rgba(64, 121, 140, 1);
+$color3: rgba(112, 169, 161, 1);
+$color4: rgba(158, 193, 163, 1);
+$color5: rgba(207, 224, 195, 1);
+
+*/
+
+
+/*
+
+  BASE
+
+*/
+body {
+  font-family: 'Inconsolata', monospace;
+  color: rgba(31, 54, 61, 1);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(158, 193, 163, 1);
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+}
+
+th {
+  text-align: right;
+}
+
+td {
+  text-align: left;
+}
+
+/*
+
+  Typography
+
+*/
+.c-heading {
+  margin: 0;
+}
+
+.c-link {
+  position: relative;
+}
+
+.c-link:after {
+  content: '';
+  position: absolute;
+  left: -0.2rem;
+  right: -0.2rem;
+  bottom: -0.1rem;
+  height: 1px;
+  background-color: rgba(158, 193, 163, 1);
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.c-link:hover:after {
+  opacity: 1;
+}
+
+
+/*
+
+  FORM
+
+*/
+.c-form {
+  padding: 1rem 0;
+}
+
+.c-form__field {
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+}
+
+textarea {
+  display: block;
+}
+
+.c-form__input {
+  outline: none;
+  position: relative;
+  padding: 0 1rem;
+  color: inherit;
+  letter-spacing: 3px;
+  border: none;
+  border-bottom: 1px solid rgba(64, 121, 140, 0.6);
+}
+
+.c-form__button {
+  vertical-align: bottom;
+  border: none;
+  outline: none;
+  padding: 0.25rem 1rem;
+  background-color: rgba(64, 121, 140, 0.6);
+  color: white;
+  cursor: pointer;
+}
+
+
+/*
+
+  HEADER
+
+*/
+.c-logo {
+  text-decoration: none;
+}
+
+.c-logo a {
+  display: inline-block;
+  color: rgba(64, 121, 140, 1);
+  position: relative;
+  padding: 0.5rem;
+  transition: all 300ms ease;
+}
+
+.c-logo a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(64, 121, 140, 1);
+  z-index: -1;
+  transition: all 300ms ease;
+}
+
+.c-logo a:hover {
+  color: white;
+}
+
+.c-logo a:hover:after {
+  width: 100%;
+}
+
+.c-header {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-nav__primary .c-nav-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgba(64, 121, 140, 1);
+}
+
+.c-nav__primary .c-nav-item {
+  display: inline-block;
+  position: relative;
+  padding: 0.25rem;
+  transition: all 300ms ease;
+}
+
+.c-nav__primary .c-nav-item:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 300ms ease;
+  z-index: -1;
+  background-color: rgba(64, 121, 140, 1);
+}
+
+.c-nav__primary .c-nav-item:hover {
+  color: white;
+}
+
+.c-nav__primary .c-nav-item:hover:after {
+  width: 100%;
+}
+
+/*
+
+  BODY
+
+*/
+
+.c-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.c-content__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/*
+
+  ARTIST
+
+*/
+.c-artist {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 1rem 0;
+  color: rgba(31, 54, 61, 1);
+  border: 2px solid currentColor;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.c-artist__thumbnail {
+  min-width: 150px;
+  min-height: 150px;
+  background-position: center center;
+  background-size: cover;
+  align-self: stretch;
+}
+
+.c-artist__bio {
+  padding: 0 1rem;
+}
+
+.c-artist__bio span:not(:last-of-type):after {
+  content: ', ';
+}
+
+.c-artist__edit-link {
+
+}
+
+.c-artist-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.c-artist-button {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  outline: none;
+  border: 2px solid rgba(112, 169, 161, 1);
+  color: rgba(112, 169, 161, 1);
+  background-color: white;
+  padding: 1em 1.5em;
+}
+
+
+/*
+
+  SONG
+
+*/
+
+.c-song {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/*
+
+  FOOTER
+
+*/
+.c-footer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}

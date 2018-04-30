@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+body > header {
+  padding-top: 2em;
+}
+
+body > header h1 {
+  margin-bottom: 0;
+}
+
+body > main {
+  flex: 1;
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+body > footer {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/**
+ * Templates
+ */
+ .todo-list,
+ .new-todo,
+ .single-todo {
+   max-width: 450px;
+   margin: 4em auto
+ }
+
+/* todo list */
+.todo-list {
+
+}
+
+.todo-list a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1em 0.5em;
+}
+
+.todo-list li a {
+  pointer-events: none;
+}
+
+.todo-list h2 {
+  display: inline;
+}
+
+.new {
+  float: right;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  transition: all 300ms ease;
+}
+
+li:hover {
+  background-color: lightgrey;
+}
+
+/* new todo */
+.new-todo {
+
+}
+
+.new-todo input,
+.new-todo textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  line-height: 2;
+  font-size: 1.3em;
+}
+
+.new-todo label {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.new-todo input {
+
+}
+
+.new-todo textarea {
+
+}
+
+.new-todo button {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid black;
+  padding: 0.5em 2.5em;
+  text-transform: uppercase;
+}
+
+/* single todo */

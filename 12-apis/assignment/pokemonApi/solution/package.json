@@ -1,0 +1,19 @@
+{
+  "name": "pokemonApi",
+  "version": "1.0.0",
+  "description": "This is the Pokeapi run by digital ocean: https://pokeapi.co Read up on the API documentation to get familiar with the different requests you can make to the API There is a lot of information that you can get back on berries, pokemon, battles, encounters, evolutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.9.4",
+    "nodemon": "^1.11.0"
+  }
+}
